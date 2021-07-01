@@ -3,7 +3,7 @@
 <head>
     <title>Beatles</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="icon.png">
+        <link rel="shortcut icon" href="./images/ficon.png">
     
         <meta charset="UTF-8">
         <meta name="robots" content="index, follow">
@@ -32,9 +32,11 @@
         <meta name="twitter:image" content="http://">
         <meta name="twitter:card" content="summary_large_image">
         <link rel="stylesheet" href="./fonts/fontawesome/fontawesome-free-5.15.3-web/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="default.css">
         <link rel="stylesheet" href="theme.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <!-- git commands -->
@@ -44,22 +46,30 @@
     git config --global user.name 'hasnat-shohag'
     git config --global user.email 'hasnat.ru.ice19@gmail.com'
     git add .
-
-
-
+    git commit -m 'project init'
+    git branch --all
+    git push -u origin master
+    git push -f origin master
     
+    git checkout gh-pages
+    git remote add origin https://github.com/hasnat-shohag/psd_to_html_with_responsive_design.git
+    git checkout gh-pages
+    git push -u origin gh-pages
+
+
+
     -->
 
 
     <header id="header">
         <div class="container">
             <div class="row">
-                <div class="col-6">
-                    <p class="left_p">
+                <div class="col-6 col-xs-12">
+                    <p class="left_p ">
                         Welcome to Beatles
                     </p>
                 </div>
-                <div class="col-6 text-right">
+                <div class="col-6 text-right col-xs-12">
                     <ul class="right_links">
                         <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href=""><i class="fab fa-twitter"></i></a></li>
@@ -71,7 +81,7 @@
             </div>
         </div>
     </header>
-    <nav id="nav">
+    <nav id="nav" style="display: none;">
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -95,7 +105,7 @@
         <div class="overlay">
             <div class="container">
                 <div class="row  justify-content-end">
-                    <div class="col-6">
+                    <div class="col-6 col-xs-12">
                         <div class="banner_content">
                             <h2>
                                 Hi! We Are
@@ -129,11 +139,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-5">
-                    <div class="left_img"></div>
-                    <img src="./images/about-us-left-image.png" alt="">
+                <div class="col-5 col-xs-12 col-sm-6 col-md-5">
+                    <div class="left_img">
+                        <img src="./images/about-us-left-image.png" alt="">
+                    </div>
                 </div>
-                <div class="col-7">
+                <div class="col-7 col-xs-12 col-sm-6 col-md-7">
                     <div class="right_content">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -158,7 +169,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-4  col-xs-12 col-sm-6">
                     <div class="service_body">
                         <div class="top">
                             <div class="icon">
@@ -178,7 +189,7 @@
                             </p>
                         </div>
                     </div>
-                </div><div class="col-4">
+                </div><div class="col-4  col-xs-12 col-sm-6">
                     <div class="service_body">
                         <div class="top">
                             <div class="icon">
@@ -198,7 +209,7 @@
                             </p>
                         </div>
                     </div>
-                </div><div class="col-4">
+                </div><div class="col-4 col-xs-12 col-sm-6">
                     <div class="service_body">
                         <div class="top">
                             <div class="icon">
@@ -234,7 +245,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 col-xs-12">
                     <div class="image_body">
                         <div class="overlay">
                             <a href="#">
@@ -252,7 +263,7 @@
                         <img src="./images/firstrow-bottom.png" alt="">
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 col-xs-12">
                     <div class="image_body">
                         <div class="overlay">
                             <a href="#">
@@ -270,7 +281,7 @@
                         <img src="./images/secondrow-bottom.png" alt="">
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 col-xs-12">
                     <div class="image_body">
                         <div class="overlay">
                             <a href="#">
@@ -301,7 +312,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-3">
+                <div class="col-3 col-xs-12 col-sm-6">
                     <div class="team_body">
                         <div class="top">
                             <div class="overlay">
@@ -312,7 +323,7 @@
                                     <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="images/memberpic1.png" alt="">
+                            <img src="./images/memberpic1.png" alt="">
                         </div>
                         <div class="bottom">
                             <h4>Sajal Sarder</h4>
@@ -320,7 +331,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 col-xs-12 col-sm-6">
                     <div class="team_body">
                         <div class="top">
                             <div class="overlay">
@@ -331,7 +342,7 @@
                                     <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="images/memberpic1.png" alt="">
+                            <img src="./images/memberpic2.png" alt="">
                         </div>
                         <div class="bottom">
                             <h4>Sajal Sarder</h4>
@@ -339,7 +350,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 col-xs-12 col-sm-6">
                     <div class="team_body">
                         <div class="top">
                             <div class="overlay">
@@ -350,7 +361,7 @@
                                     <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="images/memberpic1.png" alt="">
+                            <img src="./images/memberpic3.png" alt="">
                         </div>
                         <div class="bottom">
                             <h4>Sajal Sarder</h4>
@@ -358,7 +369,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 col-xs-12 col-sm-6">
                     <div class="team_body">
                         <div class="top">
                             <div class="overlay">
@@ -369,7 +380,7 @@
                                     <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
                                 </ul>
                             </div>
-                            <img src="images/memberpic1.png" alt="">
+                            <img src="./images/memberpic4.png" alt="">
                         </div>
                         <div class="bottom">
                             <h4>Sajal Sarder</h4>
@@ -392,7 +403,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 col-xs-12">
                     <div class="testimonial_body">
                         <div class="top">
                             <div class="img">
@@ -419,7 +430,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 col-xs-12">
                     <div class="testimonial_body">
                         <div class="top">
                             <div class="img">
@@ -452,7 +463,7 @@
     <footer id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-3 col-xs-12 col-sm-6 col-md-4">
                     <div class="one">
                         <div class="img">
                             <img src="./images/footerlogo.png" alt="">
@@ -465,7 +476,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 col-xs-12 col-sm-6 col-md-4">
                     <div class="two">
                         <h3>
                             Contact us
@@ -513,7 +524,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-2 col-xs-6 col-sm-6 col-md-4">
                     <div class="three">
                         <div class="top">
                             <h3>
@@ -534,18 +545,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 col-xs-6 col-sm-6 col-md-6">
                     <div class="four">
                         <h3>
                             Flickr Photos  
                        </h3>
                        <ul>
-                            <li><img src="/images/flikr1.png" alt=""></li>
-                            <li><img src="/images/flikr2.png" alt=""></li>
-                            <li><img src="/images/flikr3.png" alt=""></li>
-                            <li><img src="/images/flikr4.png" alt=""></li>
-                            <li><img src="/images/flikr5.png" alt=""></li>
-                            <li><img src="/images/flikr6.png" alt=""></li>
+                            <li><img src="./images/flikr1.png" alt=""></li>
+                            <li><img src="./images/flikr2.png" alt=""></li>
+                            <li><img src="./images/flikr3.png" alt=""></li>
+                            <li><img src="./images/flikr4.png" alt=""></li>
+                            <li><img src="./images/flikr5.png" alt=""></li>
+                            <li><img src="./images/flikr6.png" alt=""></li>
                        </ul>
                     </div>
                 </div>
