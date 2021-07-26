@@ -26,6 +26,7 @@
 }
 #nav .logo{
     height: 40px;
+    cursor: pointer;
 }
 #nav .nav_links{
     display: inline-flex;
@@ -42,6 +43,10 @@
 }
 #nav .nav_links li a:hover{
     color: var(--brand1);
+}
+#nav_close,
+#nav_trigger{
+    display: none;
 }
 
 /* Nav part Close */
@@ -106,7 +111,6 @@
     font-size: 24px;
     line-height: 24px;
     color: var(--black);
-    font-weight: 500;
     font-family: "oswald-bold";
     text-transform: uppercase;
     padding: 5px 0px;
@@ -116,7 +120,7 @@
 .common_heading h2::before{
     position: absolute;
     content: '';
-    background-image: url('/images/under-line.png');
+    background-image: url('./images/under-line.png');
     height: 4px;
     width: 100%;
     background-repeat: no-repeat;
@@ -132,6 +136,7 @@
 #about .common_heading{
     margin-bottom: 40px;
 }
+
 #about .left_img{
 
 }

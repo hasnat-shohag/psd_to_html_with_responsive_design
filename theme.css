@@ -9,22 +9,22 @@
 
 @font-face {
     font-family: 'opens-sans-regular';
-    src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+    src: url('./fonts/Open_Sans/OpenSans-Regular.ttf');
 }
 
 @font-face {
     font-family: 'oswald-bold';
-    src: url('../fonts/Oswald/static/Oswald-Bold.ttf');
+    src: url('./fonts/Oswald/static/Oswald-Bold.ttf');
 }
 
 @font-face {
     font-family: 'oswald-regular';
-    src: url('../fonts/Oswald/static/Oswald-Regular.ttf');
+    src: url('./fonts/Oswald/static/Oswald-Regular.ttf');
 }
 
 @font-face {
     font-family: 'myrid-pro-regular';
-    src: url('../fonts/myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF');
+    src: url('./fonts/myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF');
 }
 
 
