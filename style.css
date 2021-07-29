@@ -23,6 +23,7 @@
 /* Nav part start  */
 #nav{
     padding: 10px 0px;
+    box-sizing: border-box;
 }
 #nav .logo{
     height: 40px;
@@ -38,11 +39,15 @@
     color: var(--black);
     font-family: 'myrid-pro-regular';
     padding: 10px 6px;
+    box-sizing: border-box;
     /* border: 1px solid; */
     text-transform: capitalize;
+    border-radius: 8px;
+    transition: none;
 }
 #nav .nav_links li a:hover{
-    color: var(--brand1);
+    color: var(--brand2);
+    border: 1px solid var(--brand2);
 }
 
 /* Nav part Close */
