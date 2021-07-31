@@ -21,6 +21,9 @@
 
 /* Header Part Close*/
 /* Nav part start  */
+#nav_close, #nav_trigger {
+	display: none;
+}
 #nav{
     padding: 10px 0px;
     box-sizing: border-box;
