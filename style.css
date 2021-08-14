@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 /* Header Par Start  */ 
 #header {
     background-color: var(--brand1);
