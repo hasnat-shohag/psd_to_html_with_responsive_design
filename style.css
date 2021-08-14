@@ -1,6 +1,3 @@
-body{
-    overflow-x: hidden;
-}
 
 /* Header Par Start  */ 
 #header {
@@ -337,7 +334,7 @@ body{
     color: var(--brand1);
 }
 
-#team .team_body .top .overlay ul {
+#team .team_body .top .overlay .overlay_content ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -485,11 +482,12 @@ footer .one p{
 footer .two{
     
 }
-footer .two h3{
-    font-size: 16px;
-    line-height: 24px;
-    color: #ffffff;
-    font-family: "oswald-bold"
+footer .two h3 {
+	font-size: 16px;
+	line-height: 24px;
+	color: #ffffff;
+	font-family: "oswald-bold";
+	margin-bottom: 37px;
 }
 footer .two ul{
     margin-top: 20px;
@@ -519,11 +517,12 @@ footer .two ul li .right p{
     color: var(--white);
 }
 /* Three */
-footer .three .top h3{
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--white);
-    font-family: "oswald-bold";
+footer .three .top h3 {
+	font-size: 16px;
+	line-height: 24px;
+	color: var(--white);
+	font-family: "oswald-bold";
+	margin-bottom: 30px;
 }
 footer .three .bottom{
     margin-top: 20px;
@@ -547,13 +546,13 @@ footer .three .bottom ul li a:hover{
 
 }
 /* four */
-footer .four h3{
-    padding-left: 5px;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--white);
-    font-family: "oswald-bold";
-    margin-bottom: 25px;
+footer .four h3 {
+	padding-left: 5px;
+	font-size: 16px;
+	line-height: 24px;
+	color: var(--white);
+	font-family: "oswald-bold";
+	margin-bottom: 40px;
 }
 footer .four ul{
     display: flex;
